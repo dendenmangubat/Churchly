@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="device-width, initial-scale=1.0">
+<title>Churchly</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header>
+<a href="#" class="logo">CHURCHLY<span>.</span></a>
+<ul class="navigation">
+<li><a href="#banner">Home</a>
+<li><a href="#about">About</a>
+<li><a href="#menu">Menu</a>
+<li><a href="#expert">Expert</a>
+<li><a href="#testimonials">Testimonials</a>
+<li><a href="#contact">Contact</a>
+</ul>
+</header>
+<section class="banner" id="banner">
+<div class="content">
+<h2>Always Choose God</h2>
+<p>
+From the Kingdom of Darkness. Col 1:12-14; Giving thanks unto the Father, which hath made us meet to be partakers of the inheritance of the saints in light: Who hath delivered us from the power of darkness, and hath translated us into the kingdom of his dear Son
+</p>
+<a href="#" class="btn">Navigation</a>
+</div>
+</section>
+<script type="text/javascript">
+window.addEventListener('scroll', function(){
+const header = document.querySelector('header');
+header.classList.toggle("sticky", window.scrollY > 0);
+});
+</script>
+</body>
+</html>
