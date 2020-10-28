@@ -1,2 +1,2 @@
-# NewProject
-coming Soon
+# Churchly
+Under Development
