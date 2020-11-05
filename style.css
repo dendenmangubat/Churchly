@@ -136,7 +136,7 @@ section {
 }
 
 .row .col50 {
-    position: relatve;
+    position: relative;
     width: 48%;
 }
 
@@ -291,7 +291,7 @@ section {
 }
 
 .testimonials .content .box .imgBx img {
-    position: absolute;
+    position: ;
     top: 0;
     left: 0;
     width: 100%;
