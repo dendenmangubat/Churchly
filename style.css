@@ -455,7 +455,7 @@ section {
      margin:10px;
 	}	
 	.menu .content .box .imgBx{
-    height:260px;
+        height:260px;
 	width:300px;
 	}
 	.title{
@@ -470,6 +470,10 @@ section {
    .testimonials .content .box{
 	margin:10px;
 	padding:20px;
+   }
+   .testimonials .content .box .imgBx{
+	height:260px;
+	width:300px;  
    }
    .contact-form{
 	padding:35px 40px;
