@@ -5,17 +5,19 @@
       <meta name="viewport" content="device-width, initial-scale=1.0">
       <title>Churchly</title>
       <link rel="stylesheet" href="style.css"/>
+	  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
    </head>
    <body>
       <header>
-         <a href="#" class="logo">CHURCHLY<span>.</span></a>
+         <a href="#" id="cursive" class="logo">Churchly</a>
+		 <div class="menuToggle" onclick="toggleMenu();"></div>
          <ul class="navigation">
-            <li><a href="#banner">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Blog</a></li>
-            <li><a href="#expert">Expert</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#banner" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#menu" onclick="toggleMenu();">Blog</a></li>
+            <li><a href="#expert" onclick="toggleMenu();">Expert</a></li>
+            <li><a href="#testimonials" onclick="toggleMenu();">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
          </ul>
       </header>
       <section class="banner" id="banner">
@@ -146,6 +148,7 @@
             </div>
          </div>
       </section>
+	  
       <section class="testimonials" id="testimonials">
          <div class="title white">
             <h2 class="titleText"><span>T</span>estimonies</h2>
@@ -160,9 +163,9 @@
                </div>
                <div class="text">
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                    Having found Jesus is a beautiful thing.Your life seems to have meaning. You’ve seem to have found something that brings you great joy and happiness.
                   </p>
-                  <h3>Someone Famous</h3>
+                  <h3>Gabriel Arch</h3>
                </div>
             </div>
             <div class="box">
@@ -171,9 +174,9 @@
                </div>
                <div class="text">
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                     Anyone that has accepted Jesus in their heart is considered to be a follower of Jesus Christ. So, when anyone asks you, “Are you a Christian?”, certainly you’re going to reply, “yes, I am”.
                   </p>
-                  <h3>Someone Famous</h3>
+                  <h3>Mary Beth</h3>
                </div>
             </div>
             <div class="box">
@@ -182,13 +185,14 @@
                </div>
                <div class="text">
                   <p>
-                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.
+                     Your loneliness and emptiness have disappeared. Praise the Lord. A Christian is a follower of Christ, a disciple. If you want to see what Jesus requires of one to be a disciple of His, look up the scriptures. 
                   </p>
-                  <h3>Someone Famous</h3>
+                  <h3>Emannuel King</h3>
                </div>
             </div>
          </div>
       </section>
+
       <section class="contact" id="contact">
          <div class="title">
             <h2 class="titleText"><span>C</span>ontact Us</h2>
@@ -222,6 +226,14 @@
          const header = document.querySelector('header');
          header.classList.toggle("sticky", window.scrollY > 0);
          });
+		 
+		 function toggleMenu(){
+		 const menuToggle = document.querySelector('.menuToggle');
+		 const navigation = document.querySelector('.navigation');
+		 menuToggle.classList.toggle('active');
+		 navigation.classList.toggle('active');
+		 
+		 }
       </script>
    </body>
 </html>
