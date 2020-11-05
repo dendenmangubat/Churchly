@@ -286,7 +286,7 @@ section {
     width: 80x;
     height: 80px;
     margin-bottom: 20px;
-    border-radius: 50%;
+    border-radius: 100%;
     overflow: hidden;
 }
 
