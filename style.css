@@ -59,7 +59,7 @@ body {
     letter-spacing: 6px;
 }
 #cursive{
-	color:red;
+	color:#ff0157;
 	font-family: 'Lobster', cursive;
 	font-size: 40px;
 	font-weight:800;
@@ -291,7 +291,7 @@ section {
 }
 
 .testimonials .content .box .imgBx img {
-    position:absolute ;
+    position: ;
     top: 0;
     left: 0;
     width: 100%;
